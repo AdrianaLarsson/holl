@@ -15,7 +15,7 @@
     
   
      <!---Javascript map api key-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjTg09TQvxpjlwPMRbZfalNBwk53VeKOg&callback=initMap"
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA49gxxIIV1Y0aXk1d8cUxnvjLSFF3j-1A&callback=initMap"
         async defer></script> 
         <!---Direction api key-->
        <!--- <script async defer
@@ -39,6 +39,28 @@
           <br>
     </div>
           
+    
+
+
+    <button class="open-button" onclick="oF()">Chat</button>
+
+    <div class="chat-popup" id="pop">
+      <form action="/action_page.php" class="form-container">
+        <div class="Meddlande"></div>>
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Skriv ditt meddelande här.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Skicka</button>
+        <button type="button" class="btn cancel" onclick="cF()">Stäng chatt</button>
+      </form>
+    </div>
+    
+    
+
+
+
+
+
     <form name="stationer">
 
         <select name="stationval" id="val">
@@ -121,6 +143,23 @@
       <div id="demo">  
 
             <script language="javascript">
+
+
+ 
+     //öppna ned knapp, funktion
+     function oF() {
+    document.getElementById("pop").style.display = "block";
+ }// stänga ned knapp, funktion
+
+ function cF() {
+     document.getElementById("pop").style.display = "none";
+ }
+
+
+
+
+
+
 
 
        

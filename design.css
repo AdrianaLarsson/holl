@@ -300,3 +300,76 @@ text-shadow:  1px 1px rgb(109, 114, 145);
            }
        
       
+/* chatt öppna knappen */
+.open-button {
+  background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+  box-shadow: 5cm;
+  color: rgb(0, 0, 0);
+  font-size: 3.5vw;
+  padding: 10px 23px;
+  border: none;
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 23px;
+  right: 30px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+  color: rgb(0, 0, 0);
+  padding: 16px 20px;
+font-size: 2vw;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background: linear-gradient(rgb(231, 231, 255),rgb(87, 87, 255)), rgb(131, 223, 247);
+}
+
+/* om man dar mupekarn över knappen så blir det en ändring */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 5;
+}
